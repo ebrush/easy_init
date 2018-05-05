@@ -1,10 +1,13 @@
 # Usage
+With easy_init,
 ```
+from easy_init import init
+
 @init('r', 'g', 'b', a=1.0)
 class Color:
     pass
 ```
-will be 100% equivalent to:
+is 100% equivalent to
 ```
 class Color:
     def __init__(self, r, g, b, a=1.0):
